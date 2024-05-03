@@ -2,88 +2,92 @@
     "intents": [
         {
             "tag": "saludos",
-            "patterns": ["hola", "qué tal", "cómo estas?", "buen día", "buenas tardes"],
-            "responses": ["Hola! Bienvenido a Mendoza", "Buen día! ¿Necesitas ayuda con algo?", "¿Cómo estás? Estoy aquí para ayudarte con tu viaje a Mendoza"]
-        },
-        {
-            "tag": "nombre_ciudad",
-            "patterns": ["¿Dónde estoy?", "¿Cuál es el nombre de esta ciudad?"],
-            "responses": ["Estás en Mendoza, la ciudad del sol y del vino!", "La ciudad donde te encuentras es Mendoza, capital de la provincia de Mendoza"]
-        },
-        {
-            "tag": "lugares_turisticos",
-            "patterns": ["Qué lugares turísticos hay en Mendoza?", "¿Cuáles son los lugares más visitados?", "¿Qué puedo hacer en Mendoza?"],
-            "responses": ["En Mendoza puedes visitar el Cerro de la Gloria, el Parque General San Martín, el Museo del Vino, entre otros lugares emblemáticos", "Los lugares más visitados en Mendoza son el Cerro Aconcagua, el Valle de Uco y el centro histórico"]
-        },
-        {
-            "tag": "vuelos",
-            "patterns": ["Cómo llego a Mendoza?", "Qué aeropuertos hay cerca?", "¿Cuáles son las aerolíneas que vuelan a Mendoza?"],
-            "responses": ["Puedes llegar a Mendoza por vía aérea a través del Aeropuerto Internacional Gobernador Francisco Gabrielli", "El aeropuerto más cercano es el Aeropuerto Internacional Gobernador Francisco Gabrielli, que se encuentra a 8 km del centro de la ciudad", "Las aerolíneas que vuelan a Mendoza son Aerolíneas Argentinas, LATAM y Sky Airline"]
-        },
-        {
-            "tag": "alojamiento",
-            "patterns": ["¿Dónde puedo hospedarme en Mendoza?", "Qué tipo de alojamiento hay en la ciudad?", "¿Cuáles son los mejores hoteles en Mendoza?"],
-            "responses": ["En Mendoza hay una variedad de opciones de alojamiento, desde hoteles de lujo hasta hostels y departamentos", "Puedes encontrar hoteles, hostels, departamentos y casas de campo para rentar", "Algunos de los mejores hoteles en Mendoza son el Park Hyatt Mendoza, el Sheraton Mendoza Hotel y el InterContinental Mendoza"]
-        },
-        {
-            "tag": "gastronomia",
-            "patterns": ["Qué puedo comer en Mendoza?", "¿Cuáles son los platos típicos de la región?", "¿Dónde puedo encontrar buen vino?"],
-            "responses": ["En Mendoza puedes disfrutar de la gastronomía argentina, con platos típicos como asado, empanadas y choripán", "Los platos típicos de la región son el locro, la humita y el chupe de mariscos", "Mendoza es famosa por su vino, puedes visitar bodegas como Catena Zapata, Zuccardi y Ruca Malen"]
-        },
-        {
-            "tag": "actividades",
-            "patterns": ["Qué puedo hacer en Mendoza?", "¿Cuáles son las actividades más populares?", "¿Dónde puedo hacer deportes extremos?"],
-            "responses": ["En Mendoza puedes disfrutar de actividades al aire libre como senderismo, rafting y kayak", "Las actividades más populares en Mendoza son el trekking, el ciclismo y el horseback riding", "Puedes practicar deportes extremos como parapente, canopy y rappel en lugares como el Valle de Uco y el Cerro Aconcagua"]
-        },
-        {
-            "tag": "clima",
-            "patterns": ["¿Cuál es el clima en Mendoza?", "¿Qué ropa debo llevar?", "¿Cuándo es la mejor época para visitar Mendoza?"],
-            "responses": ["El clima en Mendoza es seco y templado, con veranos calurosos e inviernos fríos", "Debes llevar ropa ligera para el verano y ropa abrigadora para el invierno", "La mejor época para visitar Mendoza es durante la primavera y el otoño, cuando el clima es más agradable"]
-        },
-        {
-            "tag": "transporte",
-            "patterns": ["¿Cómo me muevo por la ciudad?", "¿Cuáles son las opciones de transporte en Mendoza?", "¿Dónde puedo alquilar un auto?"],
-            "responses": ["Puedes moverte por la ciudad en taxi, autobús o bicicleta", "Las opciones de transporte en Mendoza son taxis, autobuses, remises y alquiler de autos", "Puedes alquilar un auto en empresas como Hertz, Europcar y Avis"]
-        },
-        {
-            "tag": "costos",
-            "patterns": ["¿Cuánto cuesta viajar a Mendoza?", "¿Cuáles son los costos de alojamiento y comida?", "¿Es caro viajar a Mendoza?"],
-            "responses": ["Los costos de viajar a Mendoza varían dependiendo de la temporada y la duración de tu viaje", "Los costos de alojamiento y comida en Mendoza son razonables, puedes encontrar opciones para todos los presupuestos", "No, viajar a Mendoza no es muy caro, especialmente si planeas con anticipación"]
-        },
-        {
-            "tag": "lugares_cercanos",
-            "patterns": ["¿Qué lugares cercanos puedo visitar?", "¿Cuáles son las ciudades cercanas a Mendoza?", "¿Dónde puedo ir en un día?"],
-            "responses": ["Puedes visitar lugares cercanos como el Valle de Uco, San Rafael y Tunuyán", "Las ciudades cercanas a Mendoza son San Juan, La Rioja y Santiago de Chile", "En un día puedes visitar el Valle de Uco, la ciudad de San Rafael o hacer un tour por los viñedos cercanos"]
-        },
-        {
-            "tag": "fiestas_festivales",
-            "patterns": ["¿Qué fiestas y festivales hay en Mendoza?", "¿Cuándo es la Fiesta de la Vendimia?", "¿Qué eventos culturales hay en la ciudad?"],
-            "responses": ["En Mendoza hay varias fiestas y festivales durante todo el año, como la Fiesta de la Vendimia y el Festival de Jazz", "La Fiesta de la Vendimia se celebra en marzo de cada año", "La ciudad ofrece una variedad de eventos culturales, como conciertos, exposiciones de arte y festivales de música"]
-        },
-        {
-            "tag": "seguridad",
-            "patterns": ["¿Es seguro viajar a Mendoza?", "¿Cuáles son las precauciones que debo tomar?", "¿Hay delincuencia en Mendoza?"],
-            "responses": ["Sí, Mendoza es una ciudad segura para viajar", "Debes tomar las mismas precauciones que en cualquier otra ciudad, como cuidar tus pertenencias y evitar caminar solo por la noche", "Como en cualquier lugar, hay delincuencia en Mendoza, pero no es un problema grave"]
-        },
-        {
-            "tag": "idioma",
-            "patterns": ["¿Qué idioma se habla en Mendoza?", "¿Necesito hablar español para viajar a Mendoza?", "¿Hay personas que hablan inglés en la ciudad?"],
-            "responses": ["El idioma oficial en Mendoza es el español", "Es recomendable hablar español para viajar a Mendoza, pero muchos mendocinos también hablan inglés", "Sí, muchos mendocinos hablan inglés, especialmente en la industria turística"]
-        },
-        {
-            "tag": "moneda",
-            "patterns": ["¿Cuál es la moneda oficial en Mendoza?", "¿Puedo usar dólares en Mendoza?", "¿Dónde puedo cambiar dinero?"],
-            "responses": ["La moneda oficial en Mendoza es el peso argentino", "Puedes usar dólares en algunos lugares, pero es mejor cambiarlos por pesos argentinos", "Puedes cambiar dinero en bancos, casas de cambio o en algunos hoteles"]
-        },
-        {
-            "tag": "electricidad",
-            "patterns": ["¿Cuál es el voltaje eléctrico en Mendoza?", "¿Necesito un adaptador para cargar mi dispositivo?", "¿Hay tomas de corriente en los hoteles?"],
-            "responses": ["El voltaje eléctrico en Mendoza es de 220V, 50Hz", "Sí, necesitarás un adaptador para cargar tus dispositivos si vienes de un país con un voltaje diferente", "Sí, la mayoría de los hoteles tienen tomas de corriente compatibles con dispositivos extranjeros"]
-        },
-        {
-            "tag": "informacion_general",
-            "patterns": ["¿Cuál es el código postal de Mendoza?", "¿Cuál es el prefijo telefónico de Mendoza?", "¿Dónde puedo encontrar información turística?"],
-            "responses": ["El código postal de Mendoza es 5500", "El prefijo telefónico de Mendoza es 0261", "Puedes encontrar información turística en la Oficina de Turismo de Mendoza o en sitios web como TripAdvisor y Lonely Planet"]
-        }
-    ]
-}
+            "patterns": [
+                "hola",
+                "qué tal",
+                "cómo estas?",
+                "buen día",
+                "buenas tardes"
+            ],
+            "responses": ["Hola! Bienvenido a Mendoza. ¿Qué te gustaría conocer sobre la ciudad? \n1. Lugares turísticos \n2. Alojamientos \n3. Actividades \n4. Gastronomía \n5. Transporte \n6. Otro"]
+
+            },
+            {
+                "tag": "lugares_turisticos",
+                "patterns": [
+                    "1",
+                    "lugares turísticos",
+                    "sitios para visitar"
+                ],
+                "responses": [
+                    "En Mendoza puedes visitar el Cerro de la Gloria, el Parque General San Martín, el Museo del Vino, entre otros lugares emblemáticos",
+                    "Los lugares más visitados en Mendoza son el Cerro Aconcagua, el Valle de Uco y el centro histórico"
+                ]
+            },
+            {
+                "tag": "alojamientos",
+                "patterns": [
+                    "2",
+                    "dónde hospedarme",
+                    "hoteles",
+                    "alojamiento"
+                ],
+                "responses": [
+                    "En Mendoza hay una variedad de opciones de alojamiento, desde hoteles de lujo hasta hostels y departamentos",
+                    "Puedes encontrar hoteles, hostels, departamentos y casas de campo para rentar",
+                    "Algunos de los mejores hoteles en Mendoza son el Park Hyatt Mendoza, el Sheraton Mendoza Hotel y el InterContinental Mendoza"
+                ]
+            },
+            {
+                "tag": "actividades",
+                "patterns": [
+                    "3",
+                    "qué hacer",
+                    "actividades"
+                ],
+                "responses": [
+                    "En Mendoza puedes disfrutar de actividades al aire libre como senderismo, rafting y kayak",
+                    "Las actividades más populares en Mendoza son el trekking, el ciclismo y el horseback riding",
+                    "Puedes practicar deportes extremos como parapente, canopy y rappel en lugares como el Valle de Uco y el Cerro Aconcagua"
+                ]
+            },
+            {
+                "tag": "gastronomia",
+                "patterns": [
+                    "4",
+                    "qué comer",
+                    "platos típicos",
+                    "vino"
+                ],
+                "responses": [
+                    "En Mendoza puedes disfrutar de la gastronomía argentina, con platos típicos como asado, empanadas y choripán",
+                    "Los platos típicos de la región son el locro, la humita y el chupe de mariscos",
+                    "Mendoza es famosa por su vino, puedes visitar bodegas como Catena Zapata, Zuccardi y Ruca Malen"
+                ]
+            },
+            {
+                "tag": "transporte",
+                "patterns": [
+                    "5",
+                    "cómo moverme",
+                    "transporte"
+                ],
+                "responses": [
+                    "Puedes moverte por la ciudad en taxi, autobús o bicicleta",
+                    "Las opciones de transporte en Mendoza son taxis, autobuses, remises y alquiler de autos",
+                    "Puedes alquilar un auto en empresas como Hertz, Europcar y Avis"
+                ]
+            },
+            {
+                "tag": "otro",
+                "patterns": [
+                    "6",
+                    "otro",
+                    "más información"
+                ],
+                "responses": [
+                    "¿Sobre qué tema específico necesitas más información?"
+                ]
+            }
+        ]
+    }

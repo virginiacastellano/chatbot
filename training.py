@@ -8,6 +8,7 @@ from keras.models import Sequential
 from keras.layers import Dense, Dropout
 from keras.optimizers import SGD
 
+
 lemmatizer = WordNetLemmatizer()
 
 # Cargar los datos de intenciones desde el archivo JSON
