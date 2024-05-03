@@ -1,1 +1,4 @@
 venv
+classes.pkl
+model.h5
+words.pkl
