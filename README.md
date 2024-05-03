@@ -21,5 +21,7 @@ Para probar el chatbot, sigue estos pasos:
 2. Ejecuta el archivo `training.py` para entrenar el modelo. Puedes ajustar los parámetros del modelo y del optimizador según sea necesario.
 
 3. Una vez completado el entrenamiento, ejecuta el archivo `chatbot.py` para interactuar con el chatbot. Introduce mensajes de prueba y observa las respuestas proporcionadas.
+   
+4. ejecutar  `python app.py` para levantar el servidor de flask 
 
 ¡Disfruta utilizando el chatbot y explorando las capacidades de la inteligencia artificial!
