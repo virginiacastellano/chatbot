@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, jsonify, make_response
 import json
 import pickle
 import numpy as np
@@ -12,7 +12,8 @@ app = Flask(__name__, template_folder='templates')
 
 # Cargar datos y modelos necesarios
 lemmatizer = WordNetLemmatizer()
-intents = json.loads(open('intents.json').read())
+with open('intents.json', 'r', encoding='utf-8') as file:
+    intents = json.load(file)
 words = pickle.load(open('words.pkl', 'rb'))
 classes = pickle.load(open('classes.pkl', 'rb'))
 model = load_model('model.h5')
@@ -53,8 +54,11 @@ def get_response(tag, intents_json):
 def chat():
     message = request.form['message']
     category = predict_class(message)
-    response = get_response(category, intents)
+    response_text = get_response(category, intents)
+    response = make_response(response_text)
+    response.headers['Content-Type'] = 'text/plain; charset=utf-8'
     return response
+
 
 @app.route('/')
 def index():
@@ -62,5 +66,3 @@ def index():
 
 if __name__ == '__main__':
     app.run(debug=True)
-
-
