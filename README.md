@@ -65,3 +65,7 @@ Accede a la interfaz web del chatbot mediante tu navegador en la dirección `htt
 
 ¡Disfruta utilizando el chatbot y explorando las capacidades de la inteligencia artificial!
 
+## Vista del Chatbot
+
+![Vista del Chatbot](static/img/chatbot.png)
+
